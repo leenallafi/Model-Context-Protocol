@@ -26,4 +26,3 @@ Visit the [Model Context Protocol Overview](https://modelcontextprotocol.io/over
 
 ---
 
-![MCP Logo](https://mintlify.s3.us-west-1.amazonaws.com/mcp/mcp.png)
