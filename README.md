@@ -1,5 +1,6 @@
 # Model Context Protocol (MCP)
 
+
 ## Project Overview
 
 This project builds on the Model Context Protocol (MCP) by implementing **custom GitHub operations** through modular Python code. It is designed to:
@@ -7,6 +8,10 @@ This project builds on the Model Context Protocol (MCP) by implementing **custom
 - Provide reusable modules for tasks like **branch management**, **file operations**, **pull requests**, **issues**, and **milestones**.
 - Demonstrate how these operations can be **integrated with MCP workflows** or used independently for GitHub automation.
 - Support development in environments like **Visual Studio Code with GitHub Copilot**, making it easier to extend or customize operations.
+
+**Additional Notes:**
+- The PDF rendering and behavior may differ when using the **official GitHub MCP server**, as it is designed for **GitHub Copilot** and **Claude Desktop** workflows
+
 
 ## Notes on Usage
 
@@ -22,7 +27,6 @@ Example:
 - Wrap functions from `src/` as FastMCP tools.
 - Register the MCP server.
 - Call GitHub operations (e.g., create a branch, open a pull request) directly from an AI-enabled client.
-
 
 
 The project structure follows a clean modular design:
