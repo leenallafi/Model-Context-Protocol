@@ -1,5 +1,55 @@
 # Model Context Protocol (MCP)
 
+## Project Overview
+
+This project builds on the Model Context Protocol (MCP) by implementing **custom GitHub operations** through modular Python code. It is designed to:
+
+- Provide reusable modules for tasks like **branch management**, **file operations**, **pull requests**, **issues**, and **milestones**.
+- Demonstrate how these operations can be **integrated with MCP workflows** or used independently for GitHub automation.
+- Support development in environments like **Visual Studio Code with GitHub Copilot**, making it easier to extend or customize operations.
+
+## Notes on Usage
+
+### Using PyGithub
+All GitHub operations in this project are implemented using [PyGithub](https://pygithub.readthedocs.io/en/latest/), a Python library that provides full access to the GitHub API.  
+Refer to its documentation for details on authentication, repositories, issues, pull requests, and more.
+
+### Exposing Functions as MCP Tools
+These functions can also be exposed as **tools for AI applications** using [FastMCP](https://github.com/fastmcp/fastmcp).  
+This allows AI clients (e.g., Claude, VS Code MCP, ChatGPT MCP) to call these operations directly as part of an MCP workflow.
+
+Example:
+- Wrap functions from `src/` as FastMCP tools.
+- Register the MCP server.
+- Call GitHub operations (e.g., create a branch, open a pull request) directly from an AI-enabled client.
+
+
+
+The project structure follows a clean modular design:
+
+
+model-context-protocol/
+├── main.py # Entry point to test or demonstrate GitHub operations
+├── .env # Stores GitHub token and other environment variables
+└── src/
+  ├── init.py # Marks src as a package
+  ├── Authentication.py # Handles GitHub authentication (g, token, auth)
+  ├── Repository.py # Functions for file operations in repositories
+  ├── pullrequest.py # Functions to create/manage pull requests
+  ├── branch.py # Branch creation, protection, and listing
+  ├── commit.py # Commit-related utilities
+  ├── issue.py # Issue creation and commenting
+  ├── milestone.py # Milestone retrieval and management
+  ├── init.py
+|_pdf #Using Copilot and Claude Desktop, this PDF discusses using the GitHub MCP server in Visual Studio Code.
+
+
+- **`main.py`** contains **sample function calls** to demonstrate usage (e.g., creating files, listing branches).  
+- **Each module in `src/`** provides additional operations not shown in the sample, making the system **extensible**.  
+- The project can be **integrated with MCP clients** or **used standalone** for GitHub automation.
+
+---
+
 ## Overview
 
 Model Context Protocol (MCP) is an open standard designed to securely connect AI-enabled applications to real-world data, tools, and workflows. MCP enables AI systems to access the context they need—such as files, knowledge bases, and project management tools—without requiring manual data entry or custom integrations.
@@ -25,4 +75,8 @@ Model Context Protocol (MCP) is an open standard designed to securely connect AI
 Visit the [Model Context Protocol Overview](https://modelcontextprotocol.io/overview) for more details.
 
 ---
+
+
+
+
 
