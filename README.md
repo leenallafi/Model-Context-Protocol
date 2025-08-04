@@ -1,6 +1,18 @@
 # Model Context Protocol (MCP)
 
 
+# Clarification about the GitHub MCP Server mentioned in the PDF
+The PDF contains steps and instructions on how to use the official GitHub MCP server as part of GitHub Copilot or Claude Desktop workflows.
+
+These instructions do not describe a library or code that I used in my project.
+
+The GitHub MCP server is a specific server implementation designed for integration with GitHub Copilot and Claude Desktop.
+
+The PDF is intended as a reference guide to help users understand how to interact with or set up the GitHub MCP server if needed, not as a technical implementation detail of my project.
+
+
+
+
 ## Project Overview
 
 This project builds on the Model Context Protocol (MCP) by implementing **custom GitHub operations** through modular Python code. It is designed to:
@@ -8,9 +20,6 @@ This project builds on the Model Context Protocol (MCP) by implementing **custom
 - Provide reusable modules for tasks like **branch management**, **file operations**, **pull requests**, **issues**, and **milestones**.
 - Demonstrate how these operations can be **integrated with MCP workflows** or used independently for GitHub automation.
 - Support development in environments like **Visual Studio Code with GitHub Copilot**, making it easier to extend or customize operations.
-
-**Additional Notes:**
-- The PDF rendering and behavior may differ when using the **official GitHub MCP server**, as it is designed for **GitHub Copilot** and **Claude Desktop** workflows
 
 
 ## Notes on Usage
